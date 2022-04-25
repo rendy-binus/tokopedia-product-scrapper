@@ -1,0 +1,19 @@
+
+selenium:
+  chrome-driver-path: src/main/resources/chromedriver_101.0.4951.15
+  chrome-driver-args:
+    - --incognito
+    - --headless
+    - --disable-gpu
+    - --start-maximized
+    - --disable-blink-features=AutomationControlled
+  chrome-driver-user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36
+  chrome-driver-whitelisted-ips:
+    - ${scrapper.tokopedia.ip-address}
+  scrolling-value: 500
+  scrolling-interval: 2000
+
+logging:
+  level:
+    com.zaxxer.hikari: error
+    com.example.brickscrapper: debug
