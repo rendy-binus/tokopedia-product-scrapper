@@ -1,3 +1,12 @@
+scrapper:
+  tokopedia:
+    url-path: p/handphone-tablet/handphone
+    ip-address: 47.47.244.18
+    product:
+      sort-by: sorting_reviews_query_value
+      count: 3
+      max-result-in-page: 60
+      file-output-path: tokopedia_top_products.csv
 
 selenium:
   chrome-driver-path: src/main/resources/chromedriver_101.0.4951.15
